@@ -7,39 +7,74 @@
     tools:context="com.projects.amit.selloldthings.Splash"
     tools:layout_editor_absoluteY="81dp">
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:src="@drawable/oval_background" />
 
     <android.support.constraint.Guideline
         android:id="@+id/belowhalf"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.75" />
+        app:layout_constraintGuide_percent="0.50" />
 
-    <Button
-        android:id="@+id/button"
-        style="@style/Widget.AppCompat.Button.Colored"
+    <ImageView
+        android:id="@+id/textView"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="64dp"
+        android:src="@mipmap/logoone"
+        android:tint="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.projects.amit.selloldthings.Utils.ViewUtils.SansPro
+        android:id="@+id/textView4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:background="@color/colorPrimary"
         android:drawableLeft="@drawable/ic_signin"
         android:drawableTint="@color/white"
         android:elevation="1dp"
 
+        android:gravity="center"
         android:padding="15dp"
         android:text="@string/signin"
         android:textColor="@color/white"
         android:textSize="18dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/belowhalf" />
+        app:layout_constraintTop_toBottomOf="@+id/belowhalf"
+         />
 
-    <Button
+    <com.projects.amit.selloldthings.Utils.ViewUtils.SansPro
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/red"
+        android:drawableLeft="@drawable/ic_signin"
+        android:drawableTint="@color/white"
+        android:elevation="1dp"
+
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="@string/connact_with_google"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <com.projects.amit.selloldthings.Utils.ViewUtils.SansPro
         android:id="@+id/button2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -50,6 +85,7 @@
         android:drawableLeft="@drawable/ic_signin"
         android:drawableTint="@color/white"
         android:elevation="1dp"
+        android:gravity="center"
         android:padding="15dp"
         android:text="@string/connact_with_facebook"
         android:textColor="@color/white"
@@ -58,46 +94,32 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button" />
 
-    <ImageView
-        android:id="@+id/textView"
-        android:layout_width="180dp"
-        android:tint="@color/white"
-        android:layout_height="180dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:src="@mipmap/logo"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
+    <com.projects.amit.selloldthings.Utils.ViewUtils.CaviarTextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
         android:text="Not Registered?"
         android:textColor="@color/colorPrimary"
         android:textSize="16dp"
-        app:layout_constraintEnd_toStartOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button2" />
 
-    <TextView
+    <com.projects.amit.selloldthings.Utils.ViewUtils.CaviarTextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="24dp"
-        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="Create Account"
         android:textColor="@color/colorPrimaryDark"
-        android:textSize="18dp"
+        android:textSize="20dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView2"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
 
 </android.support.constraint.ConstraintLayout>

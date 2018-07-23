@@ -5,7 +5,7 @@
         android:right="-75dp"
         android:top="-175dp">
         <shape android:shape="oval">
-            <solid android:color="@color/colorPrimaryDark" />
+            <solid android:color="@color/colorPrimary" />
             <size
                 android:width="100dp"
                 android:height="350dp" />
